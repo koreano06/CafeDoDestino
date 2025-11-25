@@ -1,0 +1,7 @@
+=== RELATÓRIO DE VENDAS ===
+Total arrecadado: R$ 76.5
+Total de pedidos: 9
+Bebidas vendidas:
+ - Mocha: 5
+ - Latte: 2
+ - Expresso: 2
