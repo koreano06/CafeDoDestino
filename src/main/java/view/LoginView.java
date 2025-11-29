@@ -9,15 +9,16 @@ public class LoginView {
 
     public boolean mostrarMenuLogin() {
         while (true) {
-            System.out.println("\n=== SISTEMA DE LOGIN ===");
+            System.out.println("\n=== FAÇA SEU LOGIN ===");
             System.out.println("1 - Fazer Login");
             System.out.println("2 - Criar Usuário");
             System.out.println("3 - Sair");
+            System.out.println("=======================");
             System.out.print("Escolha: ");
+            //fala da tela de login prof <3
 
             int opc;
 
-            // Evita crash se o usuário digitar letras
             try {
                 opc = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {

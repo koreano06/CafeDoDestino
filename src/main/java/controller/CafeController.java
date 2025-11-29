@@ -10,7 +10,7 @@ public class CafeController {
     public CafeController(Caixa caixa) {
         this.caixa = caixa;
     }
-    //sou gay
+    //fim do caixa
     public Bebida criarBebida(int opcao) {
         return switch (opcao) {
             case 1 -> new Espresso();
