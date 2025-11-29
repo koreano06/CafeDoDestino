@@ -2,12 +2,8 @@ package model;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -54,7 +50,7 @@ public class Caixa {
             Path arquivo = pastaDocuments.resolve(nomeArquivo);
 
             try (BufferedWriter writer = Files.newBufferedWriter(arquivo)) {
-                writer.write("=== RELATÓRIO DE VENDAS ===");
+                writer.write("═══ RELATÓRIO DE VENDAS ═══");
                 writer.newLine();
                 writer.write("Gerado em: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
                 writer.newLine();
