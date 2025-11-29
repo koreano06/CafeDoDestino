@@ -1,15 +1,24 @@
 import view.CardapioView;
 import controller.CafeController;
 import model.Caixa;
-
+import view.LoginView;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
+        LoginView loginView = new LoginView();
+
+        if (!loginView.mostrarMenuLogin()) {
+            System.out.println("Acesso negado. Encerrando o sistema.");
+            return;
+        }
+
         Caixa caixa = new Caixa();
         CardapioView view = new CardapioView();
         CafeController controller = new CafeController(caixa);
+
+        controller.processarPedido(view);
 
         Scanner sc = new Scanner(System.in);
 
@@ -30,12 +39,7 @@ public class Main {
         System.out.println("Total de pedidos: " + caixa.getTotalPedidos());
         System.out.println("Bebidas vendidas: " + caixa.getQuantidadePorBebida());
 
-        // Define o caminho da pasta Documentos
-        String caminho = "C:/Users/korea/Documents/relatorio_vendas.txt";
-
-        // Salva relatório final
-        caixa.salvarRelatorio(caminho);
-
+        caixa.salvarRelatorioAutomatico();
 
     }
 }

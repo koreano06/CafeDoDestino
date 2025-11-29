@@ -3,7 +3,7 @@ package model;
 public class Cafe extends Bebida {
 
     public Cafe() {
-        super("Espresso", 6.00);
+        super("Cafe", 4.50);
     }
     @Override
     public void preparar() {

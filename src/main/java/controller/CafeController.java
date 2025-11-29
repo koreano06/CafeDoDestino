@@ -10,12 +10,13 @@ public class CafeController {
     public CafeController(Caixa caixa) {
         this.caixa = caixa;
     }
-
+    //fim do caixa
     public Bebida criarBebida(int opcao) {
         return switch (opcao) {
             case 1 -> new Espresso();
             case 2 -> new Latte();
             case 3 -> new Mocha();
+            case 4 -> new Cafe();
             default -> null;
         };
     }
