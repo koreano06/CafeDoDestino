@@ -29,15 +29,16 @@ public class Main {
             String opcao = sc.nextLine().trim().toLowerCase();
 
             if (opcao.equals("n")) {
-                System.out.println("\nEncerrando sistema...");
+                System.out.println("\n\nEncerrando sistema...");
                 break;
             }
         }
 
-        System.out.println("\n=== RESUMO DO CAIXA ===");
-        System.out.println("Total arrecadado: R$ " + caixa.getTotalArrecadado());
-        System.out.println("Total de pedidos: " + caixa.getTotalPedidos());
-        System.out.println("Bebidas vendidas: " + caixa.getQuantidadePorBebida());
+        System.out.println("\n╔══╣ RESUMO DO CAIXA ╠══════╗");
+        System.out.println("║  Total arrecadado: R$ " + caixa.getTotalArrecadado());
+        System.out.println("║  Total de pedidos: " + caixa.getTotalPedidos());
+        System.out.println("║  Bebidas vendidas: " + caixa.getQuantidadePorBebida());
+        System.out.println("╚═══════════════════════════╝");
 
         caixa.salvarRelatorioAutomatico();
 

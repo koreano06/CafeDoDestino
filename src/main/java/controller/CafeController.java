@@ -37,6 +37,6 @@ public class CafeController {
         // CORREÇÃO AQUI!
         caixa.registrarVenda(bebida.getNome(), bebida.getPreco());
 
-        System.out.println("Venda registrada no caixa! Total atual: R$" + caixa.getTotalArrecadado());
+        System.out.println("Venda registrada no caixa!\n Total atual: R$" + caixa.getTotalArrecadado());
     }
 }

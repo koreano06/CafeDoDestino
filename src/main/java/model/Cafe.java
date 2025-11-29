@@ -7,6 +7,6 @@ public class Cafe extends Bebida {
     }
     @Override
     public void preparar() {
-        System.out.println("Extraindo um espresso forte e aromático!");
+        System.out.println("\nExtraindo um espresso forte e aromático!");
     }
 }
