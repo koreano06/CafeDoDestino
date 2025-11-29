@@ -23,6 +23,5 @@ public abstract class Bebida {
         System.out.println("Preço: R$ " + preco);
     }
 
-    // Comportamento que cada bebida vai implementar do seu jeito
     public abstract void preparar();
 }

@@ -8,6 +8,7 @@ public class CardapioView {
         System.out.println("1 - Espresso ........ R$ 6.00");
         System.out.println("2 - Latte ........... R$ 8.50");
         System.out.println("3 - Mocha ........... R$ 9.50");
+        System.out.println("4 - Cafe ........... R$ 4.50");
     }
 
     public int pedirOpcao() {
