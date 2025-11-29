@@ -15,7 +15,7 @@ public class LoginView {
             System.out.println("║  3 - Sair            ║");
             System.out.println("╚══════════════════════╝");
             System.out.print("Escolha: ");
-            //fala da tela de login prof <3
+            //fala da tela de login prof <3 achei bonitinho fazer assim
 
             int opc;
 
